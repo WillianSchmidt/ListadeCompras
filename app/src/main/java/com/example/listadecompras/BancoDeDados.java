@@ -4,7 +4,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class BandodeDados {
+public class BancoDeDados {
     public class Banco extends SQLiteOpenHelper {
 
         private static final String NOME_BANCO = "ListaDeCompras";

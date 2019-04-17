@@ -86,9 +86,9 @@
         android:hint="Digite aqui o preço "
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="305dp" />
+        tools:layout_editor_absoluteY="303dp" />
 
     <EditText
         android:id="@+id/etQuantidade"

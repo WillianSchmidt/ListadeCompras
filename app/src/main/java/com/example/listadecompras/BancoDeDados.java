@@ -16,10 +16,17 @@ public class BancoDeDados {
 
         @Override
         public void onCreate(SQLiteDatabase db) {
-            db.execSQL("CREATE TABLE IF NOT EXISTS anotacoes ( " +
+            db.execSQL("CREATE TABLE IF NOT EXISTS Produto ( " +
                     "  id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT , " +
-                    "  titulo TEXT , " +
-                    "  texto TEXT  ) " );
+                    "  quantidade INTEGER , " +
+                    "  nome TEXT , " +
+                    "  preco REAL  ) " );
+
+            db.execSQL("CREATE TABLE IF NOT EXISTS ListasDeCompras ( " +
+                    "  id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT , " +
+                    "  nome TEXT , " +
+                    "  descricao TEXT , " +
+                    "  data NUMERIC  ) " );
         }
 
         @Override

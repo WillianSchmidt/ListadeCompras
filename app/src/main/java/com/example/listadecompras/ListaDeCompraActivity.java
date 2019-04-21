@@ -25,11 +25,11 @@ public class ListaDeCompraActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista);
+        setContentView(R.layout.activity_lista_de_compra);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        lvLista = (ListView) findViewById(R.id.lvAnotacoes);
+        lvLista = (ListView) findViewById(R.id.lvProduto);
 
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -37,7 +37,7 @@ public class ListaDeCompraActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(
-                        ListaDeCompraActivity.this, FormularioActivity.class);
+                        ListaDeCompraActivity.this, CadastroProdutoActivity.class);
                 startActivity(intent);
             }
         });
@@ -49,7 +49,7 @@ public class ListaDeCompraActivity extends AppCompatActivity {
                 final Produto produtoSelecionado = lista.get(position);
                 AlertDialog.Builder alerta =
                         new AlertDialog.Builder(ListaDeCompraActivity.this);
-                alerta.setTitle("Excluir Anotação...");
+                alerta.setTitle("Excluir produto...");
                 alerta.setMessage("Confirma a exclusão do produto " +
                         produtoSelecionado.getNome() + "?");
                 alerta.setPositiveButton("Sim", new DialogInterface.OnClickListener() {

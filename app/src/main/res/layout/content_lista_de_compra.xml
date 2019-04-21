@@ -6,14 +6,12 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".ListaDeCompraActivity"
-    tools:showIn="@layout/activity_lista_de_compra">
+    tools:showIn=".@layout/activity_lista_de_compra">
 
     <ListView
-        android:id="@+id/lvlistaDeCompra"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:id="@+id/lvProduto">
 
     </ListView>
 

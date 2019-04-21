@@ -21,12 +21,6 @@ public class BancoDeDados extends  SQLiteOpenHelper{
                     "  quantidade INTEGER , " +
                     "  nome TEXT , " +
                     "  preco REAL  ) " );
-
-            db.execSQL("CREATE TABLE IF NOT EXISTS ListasDeCompras ( " +
-                    "  id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT , " +
-                    "  nome TEXT , " +
-                    "  descricao TEXT , " +
-                    "  data NUMERIC  ) " );
         }
 
         @Override
